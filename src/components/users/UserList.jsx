@@ -31,7 +31,7 @@ const UserList = () => {
           <Link to={`edit-user/${user.id}`}>
             <EditIcon />
           </Link>
-          <DeleteIcon onClick={() => handleRemoveUser(user.id)} />
+          <span className="cursor-pointer"><DeleteIcon  onClick={() => handleRemoveUser(user.id)} /></span>
         </div>
       </div>
     ));
